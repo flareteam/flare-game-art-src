@@ -1,0 +1,10 @@
+pos=0,0,768,300
+align=center
+background=images/menus/modal_window.png
+label_title=384,23,center,center
+close=700,4
+confirm=192,192
+input=256,96
+increase=512,96
+decrease=554,96
+

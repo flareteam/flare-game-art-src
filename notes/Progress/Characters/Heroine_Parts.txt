@@ -1,0 +1,63 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2025-03-14T14:39:44-04:00
+
+====== Heroine Parts ======
+Created Friday 14 March 2025
+
+Put all in single file like with hero.blend
+
+[*] battle_axe.blend
+[*] buckler.blend
+[*] chain_boots.blend
+[*] chain_coif.blend
+[*] chain_cuirass.blend
+[*] chain_gloves.blend
+[*] chain_greaves.blend
+[*] cloth_gloves.blend
+[*] cloth_pants.blend
+[*] cloth_sandals.blend
+[*] cloth_shirt.blend
+[*] club.blend
+[*] dagger.blend
+[*] default_chest.blend
+[*] default_feet.blend
+[*] default_hands.blend
+[*] default_legs.blend
+[*] greatbow.blend
+[*] greatstaff.blend
+[*] greatsword.blend
+[*] hand_axe.blend
+[*] head_long.blend
+[*] infantry_axe.blend
+[*] iron_buckler.blend
+[*] leather_boots.blend
+[*] leather_chest.blend
+[*] leather_gloves.blend
+[*] leather_hood.blend
+[*] leather_pants.blend
+[*] longbow.blend
+[*] longsword.blend
+[*] mace.blend
+[*] mage_boots.blend
+[*] mage_hood.blend
+[*] mage_skirt.blend
+[*] mage_sleeves.blend
+[*] mage_vest.blend
+[*] maul.blend
+[*] plate_boots.blend
+[*] plate_cuirass.blend
+[*] plate_gauntlets.blend
+[*] plate_greaves.blend
+[*] plate_helm.blend
+[*] reinforced_club.blend
+[*] rod.blend
+[*] shield.blend
+[*] shortbow.blend
+[*] shortsword.blend
+[*] slingshot.blend
+[*] smith_hammer.blend
+[*] staff.blend
+[*] wand.blend
+[*] war_hammer.blend
+[*] zweihander.blend

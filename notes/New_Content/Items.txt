@@ -1,0 +1,14 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2025-04-19T19:48:27-04:00
+
+====== Items ======
+Created Saturday 19 April 2025
+
+* Chitin Armor (like the skeleton pauldrons) (tier 3-4)
+* "Explorer" armor, based on the "magic" boots (tier 1-2)
+* Another "tower" shield (kite shield?)
+* Skeleton sword
+* Crossbow (need new hero animation, might not be worth it)
+* Red Bow (scaled up shortbow, new texture)
+* 

@@ -1,0 +1,13 @@
+APPEND
+
+# Miscellaneous engine settings
+
+#save_prefix=hdtest
+#currency_id=1
+#sell_without_vendor=false
+#save_buyback=false
+
+#fogofwar=0
+#save_fogofwar=false
+
+aim_assist=96

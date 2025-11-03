@@ -1,0 +1,51 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2025-03-14T14:34:16-04:00
+
+====== Characters ======
+Created Friday 14 March 2025
+
+===== Player =====
+==== Complete: 111/111 ====
+[*] hero
+[*] heroine (see sub page)
+
+===== Enemies =====
+==== Complete: 26/26 ====
+[*] antlion
+[*] antlion, fire
+[*] antlion, ice
+[*] antlion, hatchling
+[*] boulder
+[*] cursed_grave
+[*] goblin (packing script needs to account for runner variant)
+[*] goblin elite (packing script needs to account for runner variant)
+[*] goblin_minecart
+[*] hobgoblin
+[*] hobgoblin archer
+[*] minotaur
+[*] skeleton
+[*] skeleton mage
+[*] skeleton archer
+[*] skeleton (weak)
+[*] skeleton_knight_boss
+[*] skeleton_mage_boss
+[*] skeleton_mage_high_boss
+[*] wyvern (earth)
+[*] wyvern_air
+[*] wyvern_fire
+[*] wyvern_ice
+[*] wyvern_air_boss
+[*] zombie
+[*] zombie_dark
+
+===== NPCS =====
+==== Complete: 8/8 ====
+[*] dead skeleton (object from dungeon tileset) (**UPDATE DIALOG FOR NEW XP BAR LOCATION**)
+[*] guild
+[*] knight (no blend file)
+[*] peasant man (2 variants)
+[*] peasant woman (2 variants)
+[*] peddler goblin
+[*] trader
+[*] return_obelisk (objects)

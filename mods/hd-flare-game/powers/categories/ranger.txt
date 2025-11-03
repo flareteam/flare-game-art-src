@@ -1,0 +1,11 @@
+APPEND
+
+####
+### Bear Trap (post animation)
+####
+
+[power]
+id=110
+starting_pos=source
+floor=true
+

@@ -1,0 +1,6 @@
+description=HD fantasycore & empyrean_campaign
+requires=fantasycore:1.14
+requires=empyrean_campaign:1.14
+game=flare-game
+# version=0.1
+engine_version_min=1.14.90

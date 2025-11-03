@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="64"
+   height="28"
+   viewBox="0 0 16.9333 7.40832"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   sodipodi:docname="char_menu_offense.svg"
+   inkscape:export-filename="export/char_menu_offense.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ff00ff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="4.64635"
+     inkscape:cx="-6.13385"
+     inkscape:cy="10.7611"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-115.888,-125.413)">
+    <path
+       id="path4"
+       style="fill:#282828;fill-opacity:1;stroke:#c6ba99;stroke-width:0.176389;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:8;stroke-opacity:1;stroke-dasharray:none"
+       d="m 117.697,125.796 -1.542,1.464 1.542,1.543 v -0.92 h 11.748 l 1.01,0.946 h 2.047 v -0.916 l -0.568,-0.569 0.621,-0.623 v -0.913 h -2.087 l -1.023,1.024 h -11.748 z m 0,3.608 -1.542,1.465 1.542,1.544 v -0.92 h 11.748 l 1.01,0.946 h 2.047 v -0.915 l -0.568,-0.572 0.621,-0.621 v -0.913 h -2.087 l -1.023,1.024 h -11.748 z" />
+  </g>
+</svg>

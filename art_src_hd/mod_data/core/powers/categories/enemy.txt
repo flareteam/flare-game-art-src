@@ -1,0 +1,6 @@
+APPEND
+
+# hobgoblin archer shoot state fix
+[power]
+id=259
+new_state=shoot

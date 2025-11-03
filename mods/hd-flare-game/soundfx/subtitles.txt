@@ -1,0 +1,6 @@
+APPEND
+[style]
+text_pos=0,0,center,top,font_subtitles
+pos=0,-192
+align=bottom
+

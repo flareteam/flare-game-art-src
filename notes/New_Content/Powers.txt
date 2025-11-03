@@ -1,0 +1,18 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2025-04-19T19:29:41-04:00
+
+====== Powers ======
+Created Saturday 19 April 2025
+
+===== Warrior =====
+* **Vampirism/Vampiric Strike**: Either a buff that grants HP steal, or HP steal on a single attack
+* **Rupture**: Kind of like the magician's Freeze spell, except physical damage. Applies debuff to target that lowers avoidance/poise
+
+===== Ranger =====
+* **Charged Shot**: Use Shield Bash-like state hold to pause animation before triggering the second stage. High knockback, and maybe high crit?
+* **Poison Shot**: Causes a poison cloud to spawn when connecting with a target/wall. Cloud animation is fairly long, can hit multiple enemies. Poison damage-over-time. Test interaction with bleeding damage-over-time
+
+===== Magician =====
+* **Summon Zombie**: Weaker version of the scroll. Maybe levels determine summon count?
+* **Shadow Orb**: Dark damage projectile. Applies a status to target that **increases** Dark resist, but decreases resist for all other damage types (weighted more towards non-elemental damage)

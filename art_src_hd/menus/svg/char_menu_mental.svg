@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="64"
+   height="28"
+   viewBox="0 0 16.9333 7.40833"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   sodipodi:docname="char_menu_mental.svg"
+   inkscape:export-filename="export/char_menu_mental.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ff00ff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="3.28547"
+     inkscape:cx="-8.06582"
+     inkscape:cy="9.13111"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-135.996,-102.394)">
+    <path
+       id="path2"
+       style="fill:#282828;fill-opacity:1;stroke:#c6ba99;stroke-width:0.176389;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:8;stroke-opacity:1;stroke-dasharray:none"
+       d="m 140.852,103.204 v 1.085 l 0.58,0.335 v 3.023 l -0.437,0.254 v 1.091 l 1.409,-0.814 v -1.261 h 7.113 c 0.731,-0.404 1.628,-0.429 2.409,0 h 0.718 v -1.615 h -3.368 c -0.706,0.53 -1.751,0.404 -2.306,0 h -4.618 v -1.232 z m -2.501,0.813 a 2.06985,2.00117 0 0 0 -2.07,2.001 2.06985,2.00117 0 0 0 2.07,2.003 2.06985,2.00117 0 0 0 2.069,-2.003 2.06985,2.00117 0 0 0 -2.069,-2.001 z" />
+  </g>
+</svg>

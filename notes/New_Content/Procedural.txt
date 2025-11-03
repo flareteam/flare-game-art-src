@@ -1,0 +1,13 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2025-04-19T20:10:28-04:00
+
+====== Procedural ======
+Created Saturday 19 April 2025
+
+We want to use the new item generation, but it should be separate from the main progression. So my idea is for an area called the **Iron Labyrinth**.
+
+This will be a repeatable dungeon that has the player collecting keys to progress. Ideally, it will be procedural, which will require engine support. How will map generation work?:
+* Master maps with defined regions for rooms and/or corridors
+* Corridors contain locked doors. Rooms contain keys (either by enemy drop or chest)
+* Generated maps are saved to disk in the standard map format. Will need a way to invalidate this "cache" and regenerate the map (i.e. after finishing the dungeon)

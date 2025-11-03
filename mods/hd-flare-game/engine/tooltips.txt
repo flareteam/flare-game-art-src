@@ -1,0 +1,4 @@
+APPEND
+
+tooltip_margin=12
+tooltip_width=512

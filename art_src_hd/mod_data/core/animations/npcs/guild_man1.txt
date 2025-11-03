@@ -1,0 +1,2 @@
+INCLUDE animations/npcs/guild_man.txt
+

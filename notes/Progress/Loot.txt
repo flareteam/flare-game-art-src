@@ -1,0 +1,50 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2025-03-14T14:38:16-04:00
+
+====== Loot ======
+Created Friday 14 March 2025
+
+Put all in a single file, like with hero.blend
+Ones that aren't checked need texture work (import from hero.blend)
+Maybe create a generic sack for small items (replace gem/rings?)
+
+==== Complete: 38/38 ====
+[*] loot_battle_axe.blend
+[*] loot_belt.blend
+[*] loot_book.blend
+[*] loot_boots.blend
+[*] loot_buckler.blend
+[*] loot_clothes.blend
+[*] loot_club.blend
+[*] loot_coins5.blend
+[*] loot_coins25.blend
+[*] loot_coins100.blend
+[*] loot_dagger.blend
+[*] loot_gem.blend
+[*] loot_greatbow.blend
+[*] loot_greatstaff.blend
+[*] loot_greatsword.blend
+[*] loot_hand_axe.blend
+[>] loot_hp_potion.blend **(UPDATE MODEL)**
+[*] loot_infantry_axe.blend
+[*] loot_leather_armor.blend
+[*] loot_longbow.blend
+[*] loot_longsword.blend
+[*] loot_mace.blend
+[>] loot_mp_potion.blend **(UPDATE MODEL)**
+[*] loot_maul.blend
+[*] loot_reinforced_club.blend
+[*] loot_ring.blend
+[*] loot_rod.blend
+[*] loot_scroll (pennomi's blend file)
+[*] loot_shield.blend
+[*] loot_shortbow.blend
+[*] loot_shortsword.blend
+[*] loot_slingshot.blend
+[*] loot_smith_hammer.blend
+[*] loot_staff.blend
+[*] loot_steel_armor.blend
+[*] loot_wand.blend
+[*] loot_war_hammer.blend
+[*] loot_zweihander.blend

@@ -1,0 +1,8 @@
+APPEND
+
+# - Dark Mist changed to render_above
+
+[effect]
+id=dark_mist_animation
+render_above=true
+

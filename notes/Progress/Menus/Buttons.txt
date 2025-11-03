@@ -1,0 +1,23 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2025-03-12T23:52:43-04:00
+
+====== Buttons ======
+Created Wednesday 12 March 2025
+
+==== Complete: 14/15 ====
+[*] button_config.png
+[*] button_default.png
+[*] button_plus.png
+[ ] button_small.png
+[*] button_x.png
+[*] checkbox_default.png
+[*] down.png
+[*] left.png
+[*] listbox_char.png
+[*] listbox_default.png
+[*] right.png
+[*] scrollbar_default.png
+[*] slider_default.png
+[*] up.png
+[*] upgrade.png

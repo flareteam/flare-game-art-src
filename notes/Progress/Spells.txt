@@ -1,0 +1,36 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2025-03-14T14:35:32-04:00
+
+====== Spells ======
+Created Friday 14 March 2025
+
+==== Complete: 28/28 ====
+[*] bear_trap.blend
+[*] blast.blend (should the blue variant be included?)
+[*] caltrops.blend
+[*] channel.blend
+[*] cleave.blend (rework for horizontal slash?)
+[*] dark mist (NO BLEND FILE)
+[*] ember (NO BLEND FILE)
+[*] fireball.blend
+[*] floor_spikes.blend
+[*] freeze.blend (don't bother with "fire" variant?)
+[*] heal.blend
+[*] icicle.blend
+[*] immunity (NO BLEND FILE)
+[*] lightning.blend (change to look like shock ball, NO BLEND FILE)
+[*] minecart (object from cave tileset)
+[*] plasmaball (NO BLEND FILE)
+[*] projectiles.blend (arrow, stone, spear, bolas)
+[*] quake.blend (elemental variants? Empyrean uses the ice one...)
+[*] runes.blend
+[*] shield.blend
+[*] shield_orange.blend
+[*] sparkle.blend
+[*] sparks.blend (blue, orange, red) (red loop animation def for bleed effect) (more colors?)
+[*] spear.blend (in projectiles.blend)
+[*] spit (NO BLEND FILE?)
+[*] throw_axe.blend
+[*] throw_knife.blend
+[*] thunderstrike (NO BLEND FILE)

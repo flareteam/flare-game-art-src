@@ -1,0 +1,21 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2025-03-14T14:41:41-04:00
+
+====== Tilesets ======
+Created Friday 14 March 2025
+
+===== Existing sets =====
+==== Complete: 4/4 ====
+[*] cave (need to setup Tiled)
+[*] dungeon (add bloodied floor grate)
+[*] grassland (need to setup Tiled)
+[*] snowplains (need to setup Tiled)
+
+==== Shared ====
+[*] boss chest
+[*] teleport
+
+===== New sets =====
+[ ] town (add to grassland?)
+[ ] old_ruins

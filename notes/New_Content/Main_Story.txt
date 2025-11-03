@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2025-08-30T15:32:07-04:00
+
+====== Main Story ======
+Created Saturday 30 August 2025
+
+Empyrean was being held in the sky by a group of powerful wizards. Disagreements formed with regards to Empyrean's responsibility to protect the citizens on the surface. As a result, one of the wizards, Lezaith, left for the surface. But before doing so, used a small amount of her mana to maintain Empyrean's protection.
+
+When the player defeats Lezaith, her protection spell is broken and Empyrean begins to fall. An evacuation begins, and the king starts to gather his court. As they approach the teleporters, one of the wizards casts a barrier, cutting off the rest of the party. The king's son, on the teleporter side of the barrier, lunges at the wizard. But it's too late. The wizard has already teleported away and sealed the portal. The king pleads his son to go on ahead through one of the other portals, and that he will find a way to dispel the barrier.
+
+Upon returning to Perdition Harbor, the player meets the prince who tells the story of what happened at Empyrean. The prince and the others in Perdition Harbor, start to hypothesize why the wizard would sabotage the king. It's revealed that there was a dispute over securing a surface-side source of "Mastite", an iron-like, rare resource with magical properties. The player can find Mastite Ingots in the Iron Labyrinth, so that becomes the new destination. The prince gives the player a tome that can open a hidden passage within the labyrinth. This will lead to a final dungeon where the player faces off against the wizard.

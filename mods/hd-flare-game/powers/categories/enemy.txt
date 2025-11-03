@@ -1,0 +1,12 @@
+APPEND
+
+# antlion spit (add green sparks)
+[power]
+id=239
+post_power=294
+wall_power=294
+
+# hobgoblin archer shoot state fix
+[power]
+id=259
+new_state=shoot

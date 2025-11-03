@@ -1,0 +1,17 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2025-10-19T09:26:28-04:00
+
+====== Fixes ======
+Created Sunday 19 October 2025
+
+[*] Make Xonun's dark mist power always show the animation, even if it doesn't stun
+[*] Do a pass on all maps to fix broken floor tiles
+[ ] Use bloodied variant of grate tile in dungeon maps for spike traps
+[*] Need hand-drawn art for Buchi sketchbook
+[*] Chest in Abandoned Mines sometimes doesn't give loot? Make sure all containers give loot
+[*] Padding for WidgetLog
+[*] Sound effects for button clicks
+[*] Need gfx for signature area in Book of the Dead
+[*] Add indication for bows that they block the main slot. Show disabled overlay on hover?
+[*] Draw slot type icons over empty equip slots in inventory

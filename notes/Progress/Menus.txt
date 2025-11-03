@@ -1,0 +1,45 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2025-03-12T23:49:25-04:00
+
+====== Menus ======
+Created Wednesday 12 March 2025
+
+==== Complete: 33/34 ====
+[*] actionbar_trim.png
+[*] attention_glow.png
+[*] bar_hp.png
+[*] bar_hp_background.png
+[*] bar_enemy_hp.png
+[*] bar_enemy_hp_background.png
+[*] bar_mp.png
+[*] bar_mp_background.png
+[*] bar_xp.png
+[*] bar_xp_background.png
+[*] character.png
+[*] config.png
+[*] dialog_box.png
+[*] disabled.png
+[*] game_slots.png
+[*] game_slot_select.png
+[*] input.png
+[*] inventory.png
+[*] log.png
+[*] minimap.png
+[*] modal_window.png
+[*] portrait_border.png
+[*] powers.png
+[*] powers_unlock.png
+[*] slot_empty.png
+[*] slot_selected.png
+[*] storage_generic.png
+[*] tab_active.png
+[*] tab_inactive.png
+[*] tooltips.png
+
+[x] credits_fantasycore.png (just remove this?)
+[*] crafting table (empyrean)
+[*] book (empyrean)
+[*] book2 (empyrean)
+
+Note: text/image positions in books need to be updated
