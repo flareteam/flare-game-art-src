@@ -1,0 +1,26 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2026-01-31T09:23:23-05:00
+
+====== Todo ======
+Created Saturday 31 January 2026
+
+===== Engine =====
+[*] Add specifying statblock file for map powers
+[ ] Map gen: Rooms that can only spawn a limited number of times (i.e. vendors)
+[ ] Map gen: Rooms that prefer to spawn on branches? (i.e. treasure, keys)
+[ ] Button prompts?
+[ ] Crit damage stat (i.e. not fixed to 200%). Overhit damage, too?
+[ ] Map gen: Devmode view for chunk gen that doesn't use printf?
+
+===== Art =====
+[*] Better packing of animated tiles (tighter bbox for 1st frame)
+[*] More objects for ruins tileset
+[ ] Cutscene renders to replace "oil painting filter" images
+
+===== Gameplay =====
+[ ] Create scaled goblins, wyverns, antlions
+[ ] More powers on existing undead
+[ ] Undead variants with different powers (poison, etc)
+[ ] More powers on armored antlion boss
+[ ] Add keys to Udana's trade stock
