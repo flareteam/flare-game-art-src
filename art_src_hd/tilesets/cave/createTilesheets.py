@@ -331,9 +331,9 @@ for i in range(0, len(tile_filenames)):
         tile_sheet_tiled.alpha_composite(tiled_tile, (target_x, target_y + tile_floor_offset))
 
         if tile_id not in blank_tiles:
-            tile_defs.append((tile_id, target_x, target_y, tile_w, tile_h, int(tile_w/2), int(tile_h * 0.625)))
+            tile_defs.append((tile_id, target_x, target_y + tile_short_offset, tile_w, int(tile_h/3), int(tile_w/2), int(tile_h * 0.625) -  tile_short_offset))
 
-        anim_defs[tile_id] = [(target_x, target_y, 250)]
+        anim_defs[tile_id] = [(target_x, target_y + tile_short_offset, 250)]
 
     else:
         if i == 28:
@@ -342,7 +342,7 @@ for i in range(0, len(tile_filenames)):
             tile_id = tileset_cols * 12
 
         if tile_id in anim_defs:
-            anim_defs[tile_id].append((target_x, target_y, 250))
+            anim_defs[tile_id].append((target_x, target_y + tile_short_offset, 250))
 
     tile_sheet.alpha_composite(tile, (target_x, target_y + tile_short_offset))
 

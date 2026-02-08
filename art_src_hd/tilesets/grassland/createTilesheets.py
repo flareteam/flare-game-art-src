@@ -439,9 +439,9 @@ for i in range(0, len(tile_filenames)):
         tile_sheet_tiled_water.alpha_composite(tiled_tile, (target_x, tiled_target_y))
 
         if tile_id not in blank_tiles:
-            tile_defs_water.append((tile_id, target_x, target_y, tile_w, tile_h, int(tile_w/2), tile_water_offset))
+            tile_defs_water.append((tile_id, target_x, target_y + tile_short_offset, tile_w, tile_short_offset, int(tile_w/2), tile_water_offset - tile_short_offset))
 
-        anim_defs_water[tile_id] = [(target_x, target_y, water_anim_frame_time)]
+        anim_defs_water[tile_id] = [(target_x, target_y + tile_short_offset, water_anim_frame_time)]
     else:
         if i == 48:
             target_x = 0
@@ -449,7 +449,7 @@ for i in range(0, len(tile_filenames)):
             tile_id = tileset_cols * 9
 
         if tile_id in anim_defs_water:
-            anim_defs_water[tile_id].append((target_x, target_y, water_anim_frame_time))
+            anim_defs_water[tile_id].append((target_x, target_y + tile_short_offset, water_anim_frame_time))
 
     tile_sheet_water.alpha_composite(tile, (target_x, target_y))
 
@@ -530,9 +530,9 @@ for i in range(0, len(tile_filenames)):
         tile_sheet_tiled_water.alpha_composite(tile, (target_x, tiled_target_y + tile_floor_h))
 
         if tile_id not in blank_tiles:
-            tile_defs_water.append((tile_id, target_x, target_y, tile_w, tile_h, int(tile_w/2), tile_water_offset))
+            tile_defs_water.append((tile_id, target_x, target_y + tile_floor_offset, tile_w, tile_h - tile_floor_offset, int(tile_w/2), tile_water_offset - tile_floor_offset))
 
-        anim_defs_water[tile_id] = [(target_x, target_y, water_anim_frame_time)]
+        anim_defs_water[tile_id] = [(target_x, target_y + tile_floor_offset, water_anim_frame_time)]
     else:
         if i == 16:
             target_x = 0
@@ -540,7 +540,7 @@ for i in range(0, len(tile_filenames)):
             tile_id = tileset_cols * 11
 
         if tile_id in anim_defs_water:
-            anim_defs_water[tile_id].append((target_x, target_y, water_anim_frame_time))
+            anim_defs_water[tile_id].append((target_x, target_y + tile_floor_offset, water_anim_frame_time))
 
     tile_sheet_water.alpha_composite(tile, (target_x, target_y + tile_floor_offset))
 
@@ -566,9 +566,9 @@ for i in range(0, len(tile_filenames)):
         tile_sheet_tiled_water.alpha_composite(tiled_tile, (target_x, tiled_target_y))
 
         if tile_id not in blank_tiles:
-            tile_defs_water.append((tile_id, target_x, target_y, tile_w, tile_h, int(tile_w/2), tile_water_offset))
+            tile_defs_water.append((tile_id, target_x, target_y + tile_short_offset, tile_w, tile_short_offset, int(tile_w/2), tile_water_offset - tile_short_offset))
 
-        anim_defs_water[tile_id] = [(target_x, target_y, water_anim_frame_time)]
+        anim_defs_water[tile_id] = [(target_x, target_y + tile_short_offset, water_anim_frame_time)]
     else:
         if i == 16:
             target_x = 0
@@ -576,7 +576,7 @@ for i in range(0, len(tile_filenames)):
             tile_id = tileset_cols * 12
 
         if tile_id in anim_defs_water:
-            anim_defs_water[tile_id].append((target_x, target_y, water_anim_frame_time))
+            anim_defs_water[tile_id].append((target_x, target_y + tile_short_offset, water_anim_frame_time))
 
     tile_sheet_water.alpha_composite(tile, (target_x, target_y))
 

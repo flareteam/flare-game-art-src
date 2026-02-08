@@ -405,7 +405,7 @@ for i in range(0, len(tile_filenames)):
         tile_cropped = tile.crop((j * tall_slice_w, 0, (j * tall_slice_w) + tall_slice_w, tile_h - slice_offset_y))
 
         tile_sheet.alpha_composite(tile_cropped, (target_x + slice_offset_x, target_y + slice_offset_y + top_pad))
-        # tile_sheet_tiled.alpha_composite(tile_cropped, (target_x + slice_offset_x, target_y + slice_offset_y + top_pad))
+        tile_sheet_tiled.alpha_composite(tile_cropped, (target_x + slice_offset_x, target_y + slice_offset_y + top_pad))
 
         if j < corner_slice or j >= corner_slice + 1:
             if tile_id not in blank_tiles:

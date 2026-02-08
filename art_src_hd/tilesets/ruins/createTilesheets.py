@@ -30,7 +30,7 @@ tiled_path = output_path + "../../../../tiled/tilesheets/"
 os.makedirs(tiled_path, exist_ok=True)
 
 tileset_cols = 16
-tileset_rows = 20
+tileset_rows = 26
 tileset_tiled_rows = tileset_rows - 4 # 2 animation rows + 2 rows for large stairs
 
 tile_id_offset = 24
@@ -54,18 +54,18 @@ tile_sheet_tiled_filename = tiled_path + "ruins.png"
 print("Writing tile sheet file: " + tile_sheet_tiled_filename)
 tile_sheet_tiled = Image.new('RGBA', (tile_w * tileset_cols, tile_h * tileset_tiled_rows))
 
-# tile_sheet_tiled_2x2_filename = tiled_path + "ruins_2x2.png"
-# print("Writing tile sheet file: " + tile_sheet_tiled_2x2_filename)
-# tile_sheet_tiled_2x2 = Image.new('RGBA', ((tile_w * 2) * 4, tile_h * 2))
-#
-# tile_sheet_tiled_doorleft_filename = tiled_path + "ruins_door_left.png"
-# print("Writing tile sheet file: " + tile_sheet_tiled_doorleft_filename)
-# tile_sheet_tiled_doorleft = Image.new('RGBA', (tile_w * 2, tile_h))
-#
-# tile_sheet_tiled_doorright_filename = tiled_path + "ruins_door_right.png"
-# print("Writing tile sheet file: " + tile_sheet_tiled_doorright_filename)
-# tile_sheet_tiled_doorright = Image.new('RGBA', (tile_w * 2, tile_h))
-#
+tile_sheet_tiled_2x2_filename = tiled_path + "ruins_2x2.png"
+print("Writing tile sheet file: " + tile_sheet_tiled_2x2_filename)
+tile_sheet_tiled_2x2 = Image.new('RGBA', ((tile_w * 2) * 4, int(tile_h / 2)))
+
+tile_sheet_tiled_doorleft_filename = tiled_path + "ruins_door_left.png"
+print("Writing tile sheet file: " + tile_sheet_tiled_doorleft_filename)
+tile_sheet_tiled_doorleft = Image.new('RGBA', (tile_w * 2, tile_h))
+
+tile_sheet_tiled_doorright_filename = tiled_path + "ruins_door_right.png"
+print("Writing tile sheet file: " + tile_sheet_tiled_doorright_filename)
+tile_sheet_tiled_doorright = Image.new('RGBA', (tile_w * 2, tile_h))
+
 # tile_sheet_tiled_stairs_filename = tiled_path + "ruins_stairs.png"
 # print("Writing tile sheet file: " + tile_sheet_tiled_stairs_filename)
 # tile_sheet_tiled_stairs = Image.new('RGBA', (tile_w * 16, tile_h * 2))
@@ -81,6 +81,12 @@ tile_id = tile_id_offset
 for i in range(0, len(tile_filenames)):
     tile = Image.open(tile_filenames[i])
 
+    # put 4x4 dirt tiles on own row
+    if i == 63:
+        tile_id += 1
+        target_x = 0
+        target_y += tile_h
+
     tile_sheet.alpha_composite(tile, (target_x, target_y))
     tile_sheet_tiled.alpha_composite(tile, (target_x, target_y))
 
@@ -94,10 +100,73 @@ for i in range(0, len(tile_filenames)):
         target_y += tile_h
 
 
+# pits
+target_x = (tile_w * 2)
+target_y = tile_h * 6
+tile_id = tile_id_offset + (tileset_cols * 6) + 2
+
+tile_filenames = sorted(glob.glob(output_path + "low_walls/*.png"))
+
+for i in range(0, len(tile_filenames)):
+    tile = Image.open(tile_filenames[i])
+
+    tile_flare = Image.new('RGBA', (tile_w, tile_h))
+    tile_tiled = Image.new('RGBA', (tile_w, tile_h))
+
+    # flare tileset
+    if i == 1:
+        tile_temp = tile.crop((0, 0, int(tile_w/2), tile_h))
+        tile_flare.alpha_composite(tile_temp, (0, 0))
+    elif i == 2:
+        tile_temp = tile.crop((int(tile_w/2), 0, tile_w, tile_h))
+        tile_flare.alpha_composite(tile_temp, (int(tile_w/2), 0))
+    else:
+        tile_flare = tile
+
+    # tiled tileset
+    tile_temp = tile_flare.crop((0, 0, tile_w, tile_h - tile_floor_offset))
+    tile_tiled.alpha_composite(tile_temp, (0, tile_floor_offset))
+
+    tile_sheet.alpha_composite(tile_flare, (target_x, target_y))
+    tile_sheet_tiled.alpha_composite(tile_tiled, (target_x, target_y))
+
+    if tile_id not in blank_tiles:
+        tile_defs.append((tile_id, target_x, target_y, tile_w, tile_h, int(tile_w/2), tile_h - int(tile_floor_center_h)))
+
+    tile_id += 1
+    target_x += tile_w
+    if target_x >= (tile_w * tileset_cols):
+        target_x = 0
+        target_y += tile_h
+
+
+# floor grate
+target_x = 0
+target_y = tile_h * 6
+tile_id = tile_id_offset + (tileset_cols * 6)
+
+tile_filenames = sorted(glob.glob(output_path + "floor_grate/*.png"))
+
+for i in range(0, len(tile_filenames)):
+    tile = Image.open(tile_filenames[i])
+
+    tile_sheet.alpha_composite(tile, (target_x, target_y + tile_floor_offset))
+    tile_sheet_tiled.alpha_composite(tile, (target_x, target_y + tile_floor_offset))
+
+    if tile_id not in blank_tiles:
+        tile_defs.append((tile_id, target_x, target_y, tile_w, tile_h, int(tile_w/2), int(tile_floor_center_h)))
+
+    tile_id += 1
+    target_x += tile_w
+    if target_x >= (tile_w * tileset_cols):
+        target_x = 0
+        target_y += tile_h
+
+
 # walls
 target_x = 0
-target_y = tile_h * 5
-tile_id = tile_id_offset + (tileset_cols * 5)
+target_y = tile_h * 7
+tile_id = tile_id_offset + (tileset_cols * 7)
 
 tile_filenames = sorted(glob.glob(output_path + "walls/*.png"))
 
@@ -140,63 +209,138 @@ for i in range(0, len(tile_filenames)):
         target_y += tile_h
 
 
-# # 2x2 (teleporter circle)
+# extra objects
+target_x = 0
+target_y = tile_h * 15
+tile_id = tile_id_offset + (tileset_cols * 15)
+
+tile_filenames = sorted(glob.glob(output_path + "objects_extra/*.png"))
+
+for i in range(0, len(tile_filenames)):
+    tile = Image.open(tile_filenames[i])
+
+    if i < 33:
+        tile_sheet.alpha_composite(tile, (target_x, target_y))
+        tile_sheet_tiled.alpha_composite(tile, (target_x, target_y))
+
+        if i == 32:
+            # first tile of lit brazier
+            if tile_id not in blank_tiles:
+                tile_defs.append((tile_id, target_x, target_y + tile_short_offset, tile_w, tile_h - tile_short_offset, int(tile_w/2), int(tile_floor_center_h - tile_short_offset)))
+
+            anim_defs[tile_id] = []
+            anim_defs[tile_id].append((target_x, target_y + tile_short_offset, 66))
+        else:
+            if tile_id not in blank_tiles:
+                tile_defs.append((tile_id, target_x, target_y, tile_w, tile_h, int(tile_w/2), int(tile_floor_center_h)))
+
+            tile_id += 1
+    else:
+        # rest of lit brazier
+        if i == 33:
+            target_x = 0
+            target_y = tile_h * 25
+
+        tile_sheet.alpha_composite(tile, (target_x, target_y))
+        anim_defs[tile_id].append((target_x, target_y + tile_short_offset, 66))
+
+    target_x += tile_w
+    if target_x >= (tile_w * tileset_cols):
+        target_x = 0
+        target_y += tile_h
+
+
+# plants
+target_x = 0
+target_y = tile_h * 18
+tile_id = tile_id_offset + (tileset_cols * 18)
+
+tile_filenames = sorted(glob.glob(output_path + "plants/*.png"))
+
+for i in range(0, len(tile_filenames)):
+    tile = Image.open(tile_filenames[i])
+
+    tile_sheet.alpha_composite(tile, (target_x, target_y))
+    tile_sheet_tiled.alpha_composite(tile, (target_x, target_y))
+
+    if tile_id not in blank_tiles:
+        tile_defs.append((tile_id, target_x, target_y, tile_w, tile_h, int(tile_w/2), int(tile_floor_center_h)))
+
+    tile_id += 1
+    target_x += tile_w
+    if target_x >= (tile_w * tileset_cols):
+        target_x = 0
+        target_y += tile_h
+
+
+# stairs
+target_x = 0
+target_y = tile_h * 19
+tile_id = tile_id_offset + (tileset_cols * 19)
+
+tall_slices = 6
+tall_slice_w = int(tile_w/2)
+
+tile_filenames = sorted(glob.glob(output_path + "stairs/*.png"))
+
+for i in range(0, len(tile_filenames)):
+    corner_slice = 2
+
+    # down stairs
+    if i == 2:
+        target_x = 0
+        target_y += tile_h
+        tile_id += 6
+
+    tile = Image.open(tile_filenames[i])
+    top_pad = tile_h - tile.size[1]
+
+    for j in range(0, tall_slices):
+        # left or right
+        slice_col = j % 2
+
+        if j == corner_slice:
+            slice_offset_x = 0
+            slice_offset_y = 0
+        elif j > corner_slice:
+            slice_offset_x = tall_slice_w
+            slice_offset_y = abs(j - corner_slice - 1) * tile_large_offset_step
+        else:
+            slice_offset_x = 0
+            slice_offset_y = abs(j - corner_slice) * tile_large_offset_step
+
+        tile_cropped = tile.crop((j * tall_slice_w, 0, (j * tall_slice_w) + tall_slice_w, tile_h - slice_offset_y))
+
+        tile_sheet.alpha_composite(tile_cropped, (target_x + slice_offset_x, target_y + slice_offset_y + top_pad))
+        tile_sheet_tiled.alpha_composite(tile_cropped, (target_x + slice_offset_x, target_y + slice_offset_y + top_pad))
+
+        if j < corner_slice or j >= corner_slice + 1:
+            if tile_id not in blank_tiles:
+                tile_defs.append((tile_id, target_x, target_y, tile_w, tile_h, int(tile_w/2), tile_floor_center_h))
+
+            # whole tile complete, increment to next tile
+            tile_id += 1
+            target_x += tile_w
+            if target_x >= (tile_w * tileset_cols):
+                target_x = 0
+                target_y += tile_h
+
+
+# doors
 # target_x = 0
-# target_y = tile_h * 16
-# tile_id = 264
-# anim_id = 265
-# anim_defs[anim_id] = []
+# target_y = tile_h * 19
+# tile_id = tile_id_offset + (tileset_cols * 19)
 #
-# tile_filenames = sorted(glob.glob(output_path + "../../teleport/output/*.png"))
-#
-# # create the background for 2x2 tiles
-# tile_floor = Image.open(output_path + "floors/0001.png")
-# tile_floor_2x2 = Image.new('RGBA', (tile_w * 2, tile_h * 2))
-# tile_floor_2x2_offsets = [ (int(tile_w/2), 0), (0, int(tile_floor_h/2)), (tile_w, int(tile_floor_h/2)), (int(tile_w/2), tile_floor_h) ]
-# for tile_offset in tile_floor_2x2_offsets:
-#     tile_floor_2x2.alpha_composite(tile_floor, (tile_offset[0], tile_offset[1]))
+# tile_filenames = sorted(glob.glob(output_path + "doors/*.png"))
 #
 # for i in range(0, len(tile_filenames)):
 #     tile = Image.open(tile_filenames[i])
 #
-#     for tile_offset in tile_floor_2x2_offsets:
-#         tile_sheet.alpha_composite(tile_floor, (target_x + tile_offset[0], target_y + tile_offset[1]))
 #     tile_sheet.alpha_composite(tile, (target_x, target_y))
+#     tile_sheet_tiled.alpha_composite(tile, (target_x, target_y))
 #
-#     if i < 2:
-#         for tile_offset in tile_floor_2x2_offsets:
-#             tile_sheet_tiled_2x2.alpha_composite(tile_floor, (target_x + tile_offset[0], tile_offset[1]))
-#         tile_sheet_tiled_2x2.alpha_composite(tile, (target_x, 0))
-#
-#         if tile_id not in blank_tiles:
-#             tile_defs.append((tile_id, target_x, target_y, tile_w*2, tile_floor_h*2, int(tile_w/2), tile_floor_h))
-#
-#     if i > 0:
-#         anim_defs[anim_id].append((target_x, target_y, 66))
-#
-#     tile_id += 1
-#     target_x += (tile_w * 2)
-#     if target_x >= (tile_w * tileset_cols):
-#         target_x = 0
-#         target_y += tile_h
-
-
-# boss chest
-# target_x = 0
-# target_y = tile_h * 19
-# tile_id = 288
-#
-# tile_filenames = sorted(glob.glob(output_path + "../../common/output/boss_chest/*.png"))
-#
-# for i in range(0, len(tile_filenames)):
 #     if tile_id not in blank_tiles:
 #         tile_defs.append((tile_id, target_x, target_y, tile_w, tile_h, int(tile_w/2), int(tile_floor_center_h)))
-#
-#         tile = Image.open(tile_filenames[i])
-#
-#         tile_sheet.alpha_composite(tile, (target_x, target_y + tile_short_offset))
-#         # TODO separate tilesheet for boss chest
-#         # tile_sheet_tiled.alpha_composite(tile, (target_x, target_y))
 #
 #     tile_id += 1
 #     target_x += tile_w
@@ -205,12 +349,127 @@ for i in range(0, len(tile_filenames)):
 #         target_y += tile_h
 
 
+# doors
+# We start with the closed doors, which aren't on the Tiled sheet, but ARE on the Flare sheet.
+# The Flare sheet has an empty row below the open doors, so we'll put them there. This will need to change if we decide to use that row for new tiles.
+target_x = 0
+target_y = tile_h * 22
+tile_id = 376
+
+tile_filenames = sorted(glob.glob(output_path + "doors/*.png"))
+
+for i in range(0, len(tile_filenames)):
+    tile = Image.open(tile_filenames[i])
+
+    # for closed doors
+    door_offset_x = 0
+    door_offset_y = 0
+
+    if i < 2:
+        # door closed left
+        tile_sheet.alpha_composite(tile, (target_x, target_y))
+        tile_sheet_tiled_doorleft.alpha_composite(tile, (target_x, 0))
+        door_offset_x = -48
+        door_offset_y = -24
+    elif i < 4:
+        # door closed right
+        tile_sheet.alpha_composite(tile, (target_x, target_y))
+        tile_sheet_tiled_doorright.alpha_composite(tile, (target_x - (tile_w * 2), 0))
+        door_offset_x = 48
+        door_offset_y = -24
+    else:
+        # open doors
+        # we're done with the closed doors, reset our target/id for placing the open doors on both tilesheets
+        if i == 4:
+            target_x = 0
+            target_y = tile_h * 21
+            tile_id = tile_id_offset + (tileset_cols * 21)
+
+        tile_sheet.alpha_composite(tile, (target_x, target_y))
+        tile_sheet_tiled.alpha_composite(tile, (target_x, target_y))
+
+    if tile_id not in blank_tiles:
+        tile_defs.append((tile_id, target_x, target_y, tile_w, tile_h, int(tile_w/2) - door_offset_x, int(tile_floor_center_h) - door_offset_y))
+
+    tile_id += 1
+    target_x += tile_w
+    if target_x >= (tile_w * tileset_cols):
+        target_x = 0
+        target_y += tile_h
+
+
+# # 2x2 (teleporter circle)
+target_x = 0
+target_y = (tile_h * 23) + int(tile_h / 2)
+tile_id = 380
+anim_id = 381
+anim_defs[anim_id] = []
+
+tile_filenames = sorted(glob.glob(output_path + "../../teleport/output/*.png"))
+
+# create the background for 2x2 tiles
+# tile_floor = Image.open(output_path + "floors/0001.png")
+# tile_floor = tile_floor.crop((0, tile_h - tile_floor_h, tile_w, tile_h))
+# tile_floor_2x2 = Image.new('RGBA', (tile_w * 2, tile_h * 2))
+# tile_floor_2x2_offsets = [ (int(tile_w/2), 0), (0, int(tile_floor_h/2)), (tile_w, int(tile_floor_h/2)), (int(tile_w/2), tile_floor_h) ]
+# for tile_offset in tile_floor_2x2_offsets:
+#     tile_floor_2x2.alpha_composite(tile_floor, (tile_offset[0], tile_offset[1]))
+
+for i in range(0, len(tile_filenames)):
+    tile = Image.open(tile_filenames[i])
+
+    # for tile_offset in tile_floor_2x2_offsets:
+    #     tile_sheet.alpha_composite(tile_floor, (target_x + tile_offset[0], target_y + tile_offset[1]))
+    tile_sheet.alpha_composite(tile, (target_x, target_y))
+
+    if i < 2:
+        # for tile_offset in tile_floor_2x2_offsets:
+        #     tile_sheet_tiled_2x2.alpha_composite(tile_floor, (target_x + tile_offset[0], tile_offset[1]))
+        tile_sheet_tiled_2x2.alpha_composite(tile, (target_x, 0))
+
+        if tile_id not in blank_tiles:
+            tile_defs.append((tile_id, target_x, target_y, tile_w*2, tile_floor_h*2, int(tile_w/2), tile_floor_h))
+
+    if i > 0:
+        anim_defs[anim_id].append((target_x, target_y, 66))
+
+    tile_id += 1
+    target_x += (tile_w * 2)
+    if target_x >= (tile_w * tileset_cols):
+        target_x = 0
+        target_y += tile_h
+
+
+# boss chest
+target_x = 0
+target_y = tile_h * 24
+tile_id = 384
+
+tile_filenames = sorted(glob.glob(output_path + "../../common/output/boss_chest/*.png"))
+
+for i in range(0, len(tile_filenames)):
+    if tile_id not in blank_tiles:
+        tile_defs.append((tile_id, target_x, target_y, tile_w, tile_h, int(tile_w/2), int(tile_floor_center_h)))
+
+        tile = Image.open(tile_filenames[i])
+
+        tile_sheet.alpha_composite(tile, (target_x, target_y + tile_short_offset))
+        # TODO separate tilesheet for boss chest
+        # tile_sheet_tiled.alpha_composite(tile, (target_x, target_y))
+
+    tile_id += 1
+    target_x += tile_w
+    if target_x >= (tile_w * tileset_cols):
+        target_x = 0
+        target_y += tile_h
+
+
 # save the tilesheet files
 tile_sheet.save(tile_sheet_filename)
 tile_sheet_tiled.save(tile_sheet_tiled_filename)
-# tile_sheet_tiled_2x2.save(tile_sheet_tiled_2x2_filename)
-# tile_sheet_tiled_doorleft.save(tile_sheet_tiled_doorleft_filename)
-# tile_sheet_tiled_doorright.save(tile_sheet_tiled_doorright_filename)
+tile_sheet_tiled_2x2.save(tile_sheet_tiled_2x2_filename)
+tile_sheet_tiled_doorleft.save(tile_sheet_tiled_doorleft_filename)
+tile_sheet_tiled_doorright.save(tile_sheet_tiled_doorright_filename)
 # tile_sheet_tiled_stairs.save(tile_sheet_tiled_stairs_filename)
 
 # tilesetdef
