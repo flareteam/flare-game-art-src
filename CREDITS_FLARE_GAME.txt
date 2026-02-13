@@ -1,0 +1,55 @@
+Flare Game Credits
+
+Art
+
+Blarumyrran
+Brandon Morris "Augmentality" | http://www.youtube.com/brandon75689
+Clint Bellanger | http://clintbellanger.net
+Holly Daniel | https://www.odesk.com/users/~~822174c5679d5273
+Justin Jacobs | http://dorkster.github.io/
+Justin Nichol | http://blackflaggames.org/
+Jessica "Zeldyn" Cox | http://zeldyn.deviantart.com/
+remaxim | http://opengameart.org/users/remaxim
+rubberduck | https://opengameart.org/users/rubberduck
+Sarah Benalene | http://benalene.com/
+Scrittl
+Stefan Beller | http://github.com/stefanbeller
+
+Additional Art
+  Thanks to these artists for releasing reusable open-licensed art
+
+Aare
+Bart K | OpenGameArt.org
+Blender Foundation | apricot.blender.org
+Cori Samuel
+D. Sharon Pruitt
+Hythlodaeus
+Iwan "qubodup" Gabovitch
+Lamoot
+Lattice
+Ljudbank
+Lorc
+MaximB
+Michael Baradari
+Mike Koenig
+Mikodrak
+Misha
+Mumu
+Naraphim
+p0ss
+Renderwahn
+rubberduck
+Samuel Moxham
+Sindwiller
+Spookymodem
+Stephan
+TiZiana
+Vwolfdog
+Yughues
+Zuendholz
+
+Full Credits
+
+See the full credits listing including per-file attribution online:
+https://github.com/flareteam/flare-engine/wiki/Credits
+https://github.com/flareteam/flare-game/wiki/Credits

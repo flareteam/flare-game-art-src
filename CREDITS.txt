@@ -1,55 +1,436 @@
-Flare Game Credits
+########################
+### Backgrounds
+########################
 
-Art
+File: art_src_hd/backgrounds/dungeon.blend
+Author: Justin Jacobs (composition), Clint Bellanger (models)
+License: CC-BY-SA 3.0
+Source: (see tilesets/dungeon)
 
-Blarumyrran
-Brandon Morris "Augmentality" | http://www.youtube.com/brandon75689
-Clint Bellanger | http://clintbellanger.net
-Holly Daniel | https://www.odesk.com/users/~~822174c5679d5273
-Justin Jacobs | http://dorkster.github.io/
-Justin Nichol | http://blackflaggames.org/
-Jessica "Zeldyn" Cox | http://zeldyn.deviantart.com/
-remaxim | http://opengameart.org/users/remaxim
-rubberduck | https://opengameart.org/users/rubberduck
-Sarah Benalene | http://benalene.com/
-Scrittl
-Stefan Beller | http://github.com/stefanbeller
+########################
+### Characters
+########################
 
-Additional Art
-  Thanks to these artists for releasing reusable open-licensed art
+File: art_src_hd/characters/antlion/*
+File: art_src_hd/characters/antlion_hatchling/*
+Author: Clint Bellanger
+License: CC-BY 3.0
+Source: https://opengameart.org/content/antlion
 
-Aare
-Bart K | OpenGameArt.org
-Blender Foundation | apricot.blender.org
-Cori Samuel
-D. Sharon Pruitt
-Hythlodaeus
-Iwan "qubodup" Gabovitch
-Lamoot
-Lattice
-Ljudbank
-Lorc
-MaximB
-Michael Baradari
-Mike Koenig
-Mikodrak
-Misha
-Mumu
-Naraphim
-p0ss
-Renderwahn
-rubberduck
-Samuel Moxham
-Sindwiller
-Spookymodem
-Stephan
-TiZiana
-Vwolfdog
-Yughues
-Zuendholz
+File: art_src_hd/characters/antlion_armored/*
+Author: Justin Jacobs, Clint Bellanger (original model)
+License: CC-BY-SA 3.0
+Source: https://opengameart.org/content/antlion
 
-Full Credits
+File: art_src_hd/characters/boulder/*
+Author: Clint Bellanger (original model), Justin Jacobs (animation)
+License: CC-BY 3.0
+Source: https://opengameart.org/content/cave-tileset
 
-See the full credits listing including per-file attribution online:
-https://github.com/flareteam/flare-engine/wiki/Credits
-https://github.com/flareteam/flare-game/wiki/Credits
+File: art_src_hd/characters/cursed_grave/*
+Author: Clint Bellanger
+License: CC-BY 3.0
+Source: https://opengameart.org/content/cursed-grave
+
+File: art_src_hd/characters/dead_skeleton/*
+MISSING-INFO: Taken from the dungeon tileset, so likely by Clint Bellanger.
+
+File: art_src_hd/characters/goblin/goblin.blend
+Author: Clint Bellanger
+License: CC-BY 3.0
+Source: https://opengameart.org/content/goblin
+
+File: art_src_hd/characters/goblin/goblin_elite.blend
+MISSING-INFO: Can't find exact source, but likely Clint Bellanger.
+
+File: art_src_hd/characters/goblin_minecart/*
+Author: Justin Jacobs (composition), Clint Bellanger (models)
+License: CC-BY-SA 3.0
+Source: https://opengameart.org/content/goblin
+Source: https://opengameart.org/content/mine-cart-set
+
+File: art_src_hd/characters/guild/*
+MISSING-INFO: Clint Bellanger's human model?
+
+File: art_src_hd/characters/hero/*
+File: art_src_hd/characters/heroine/*
+Author: Clint Bellanger
+License: CC-BY 3.0
+Source: https://opengameart.org/content/isometric-hero-and-heroine
+Source (CC-BY-SA 3.0): https://opengameart.org/content/iron-buckler
+
+File: art_src_hd/characters/hobgoblin/*
+Author: VWolfdog, Clint Bellanger (original model)
+License: CC-BY 3.0
+Source: https://opengameart.org/content/flare-mod-hobgoblin
+Source: https://opengameart.org/content/flare-mod-hobgoblin-archer
+
+File: art_src_hd/characters/knight/*
+Author: Justin Jacobs, Clint Bellanger (models)
+License: CC-BY-SA 3.0
+
+File: art_src_hd/characters/minotaur/*
+Author: Clint Bellanger
+License: CC-BY 3.0
+Source: https://opengameart.org/content/minotaur
+
+File: art_src_hd/characters/peasants/*
+Author: Clint Bellanger, Justin Jacobs (remixed man #2 and woman #1)
+License: CC-BY 3.0
+
+File: art_src_hd/characters/peddler_goblin/*
+Author: VWolfdog, Clint Bellanger (original model)
+License: CC-BY 3.0
+Source: https://opengameart.org/content/flare-mod-peddler-goblin
+
+File: art_src_hd/characters/return_obelisk/*
+Author: Clint Bellanger
+MISSING-INFO: License/source?
+
+File: art_src_hd/characters/skeleton/*
+Author: Clint Bellanger
+License: CC-BY 3.0
+Source: https://opengameart.org/content/skeleton-warrior
+
+File: art_src_hd/characters/skeleton_bosses/*
+Author: VWolfdog, Clint Bellanger (original model)
+License: CC-BY 3.0
+Source: https://opengameart.org/content/flare-skeleton-mod-skeletal-knight
+Source: https://opengameart.org/content/flare-skeleton-mod-skeletal-occultist
+Source: https://opengameart.org/content/flare-mod-high-skeleton-mage
+
+File: art_src_hd/characters/wandering_trader/*
+Author: TiZiana
+License: CC-BY 3.0
+Source: https://opengameart.org/content/wandering-vendor-npc
+
+File: art_src_hd/characters/wyvern/*
+Author: Clint Bellanger, Justin Nichol (textures)
+License: CC-BY-SA 3.0
+Source: https://opengameart.org/content/wyvern-1
+Source: https://opengameart.org/content/wyvern-elemental-skins
+
+File: art_src_hd/characters/zombie/*
+Author: Clint Bellanger
+License: CC-BY 3.0
+Source: https://opengameart.org/content/zombie-0
+
+########################
+### User Interface
+########################
+
+File: art_src_hd/cursors/*
+Author: Justin Jacobs
+License: CC-BY-SA 3.0
+
+File: art_src_hd/icons/actionbar_menu_buttons.blend
+Author: Justin Jacobs
+License: CC-BY-SA 3.0
+
+File: art_src_hd/icons/powers.blend
+Author: Clint Bellanger
+License: CC-BY-SA 3.0
+Source: https://opengameart.org/content/powers-icons
+
+File: art_src_hd/menus/book.xcf
+Author: yd
+License: CC0
+Source: https://opengameart.org/content/spellbook-template
+
+File: art_src_hd/menus/inventory_slot_overlays/*
+Author: Clint Bellanger, Blarumyrran, crowline, Justin Nichol
+License: CC0
+Source: https://opengameart.org/content/armor-icons-by-equipment-slot
+Source (CC-BY 3.0): https://opengameart.org/content/ring-set-precious-metals
+Source (CC-BY 3.0): https://opengameart.org/content/gems
+
+File: art_src_hd/menus/* (excluding the files mentioned above)
+Author: Justin Jacobs
+License: CC-BY-SA 3.0
+
+########################
+### Loot animations
+########################
+
+File: art_src_hd/loot/loot.blend
+Author: Clint Bellanger
+License: CC-BY 3.0
+Source: https://opengameart.org/content/flying-loot-animations
+
+File: art_src_hd/loot/loot_coins.blend
+Author: Clint Bellanger
+License: CC-BY 3.0
+Source: https://opengameart.org/content/flying-coins-loot
+
+File: art_src_hd/loot/loot_scroll.blend
+Author: pennomi (model), Justin Jacobs (animation)
+License: CC0
+Source: https://opengameart.org/content/scroll-wooden-rollers
+
+########################
+### Spell animations
+########################
+
+File: art_src_hd/spells/bear_trap.blend
+Author: Clint Bellanger
+License: CC-BY-SA 3.0
+
+File: art_src_hd/spells/blast.blend
+Author: Clint Bellanger
+License: CC-BY 3.0
+Source: https://opengameart.org/content/fire-spell-explosion
+
+File: art_src_hd/spells/caltrops.blend
+Author: Clint Bellanger
+License: CC-BY-SA 3.0
+
+File: art_src_hd/spells/channel.blend
+Author: Clint Bellanger
+License: CC-BY 3.0
+
+File: art_src_hd/spells/cleave.blend
+Author: Justin Jacobs
+License: CC-BY-SA 3.0
+
+File: art_src_hd/spells/dark_mist.blend
+Author: Justin Jacobs
+License: CC-BY-SA 3.0
+
+File: art_src_hd/spells/ember.blend
+Author: Justin Jacobs
+License: CC-BY-SA 3.0
+
+File: art_src_hd/spells/fireball.blend
+Author: Clint Bellanger
+License: CC-BY 3.0
+Source: https://opengameart.org/content/fireball-spell
+
+File: art_src_hd/spells/floor_spikes.blend
+Author: Clint Bellanger
+License: CC-BY-SA 3.0
+
+File: art_src_hd/spells/freeze.blend
+Author: Clint Bellanger
+License: CC-BY 3.0
+Source: https://opengameart.org/content/freeze-spell
+
+File: art_src_hd/spells/heal.blend
+Author: Clint Bellanger
+License: CC-BY 3.0
+Source: https://opengameart.org/content/heal-spell
+
+File: art_src_hd/spells/icicle.blend
+Author: Clint Bellanger
+License: CC-BY 3.0
+Source: https://opengameart.org/content/icicle-spell
+
+File: art_src_hd/spells/immunity.blend
+Author: Justin Jacobs
+License: CC-BY-SA 3.0
+
+File: art_src_hd/spells/lightning.blend
+Author: Justin Jacobs
+License: CC-BY-SA 3.0
+
+File: art_src_hd/spells/minecart.blend
+Author: Clint Bellanger
+License: CC-BY 3.0
+Source: https://opengameart.org/content/mine-cart-set
+
+File: art_src_hd/spells/plasmaball.blend
+Author: pennomi
+License: CC-BY-SA 3.0
+Source: https://opengameart.org/content/plasmaball
+
+File: art_src_hd/spells/projectiles.blend
+Author: Clint Bellanger
+License: CC-BY 3.0
+Source: https://opengameart.org/content/projectiles
+
+File: art_src_hd/spells/quake.blend
+Author: Clint Bellanger
+License: CC-BY 3.0
+Source: https://opengameart.org/content/quake-spell
+
+File: art_src_hd/spells/runes.blend
+Author: Clint Bellanger
+License: CC-BY 3.0
+Source: https://opengameart.org/content/teleport-rune
+
+File: art_src_hd/spells/shield.blend
+Author: Clint Bellanger
+License: CC-BY 3.0
+Source: https://opengameart.org/content/shield-spell
+
+File: art_src_hd/spells/sparks.blend
+Author: Clint Bellanger
+License: CC-BY 3.0
+Source: https://opengameart.org/content/sparks-fire-ice-blood
+
+File: art_src_hd/spells/sparkle.blend
+Author: Justin Jacobs
+License: CC-BY-SA 3.0
+
+File: art_src_hd/spells/spit.blend
+Author: Short-Ribs
+License: CC-BY 3.0
+Source: https://opengameart.org/content/flare-mod-slime-projectile
+
+File: art_src_hd/spells/throw_axe.blend
+Author: Clint Bellanger
+License: CC-BY-SA 3.0
+
+File: art_src_hd/spells/throw_knife.blend
+Author: Clint Bellanger
+License: CC-BY-SA 3.0
+
+File: art_src_hd/spells/thunderstrike.blend
+Author: Justin Jacobs
+License: CC-BY-SA 3.0
+
+########################
+### Tilesets
+########################
+
+File: art_src_hd/tilesets/cave/cave_wood_walk.blend
+Author: Stefan Beller
+License: CC-BY 3.0
+Source: https://opengameart.org/content/enhancement-to-the-cave-tileset
+
+File: art_src_hd/tilesets/cave/cave_exits.blend (presently unused)
+Author: Justin Jacobs
+License: CC-BY-SA 3.0
+
+File: art_src_hd/tilesets/cave/* (excluding files listed above)
+Author: Clint Bellanger, Justin Jacobs (water animations)
+License: CC-BY 3.0
+Source: https://opengameart.org/content/cave-tileset
+Source: https://opengameart.org/content/mine-cart-set
+Source: https://opengameart.org/content/low-poly-mushrooms
+
+File: art_src_hd/tilesets/common/boss_chest.blend
+Author: Clint Bellanger
+License: CC-BY-SA 3.0
+
+File: art_src_hd/tilesets/common/lighting.blend
+Author: Justin Jacobs
+License: CC0
+
+File: art_src_hd/tilesets/dungeon/*
+Author: Clint Bellanger, Hythlodaeus ("tombwoof" model)
+License: CC-BY 3.0
+Source: https://opengameart.org/content/dungeon-wall-segments-hi-poly
+Source: https://opengameart.org/content/barricade-tiles
+Source (CC0): https://opengameart.org/content/bed-low-poly 
+Source: https://opengameart.org/content/dungeon-stairs
+Source: https://opengameart.org/content/tombwoof-tiles
+
+File: art_src_hd/tilesets/grassland/rotten_tower.blend
+Author: Stefan Beller
+License: CC-BY-SA 3.0
+Source: https://opengameart.org/content/wip-flare-defense-tower
+
+File: art_src_hd/tilesets/grassland/* (excluding files listed above)
+Author: Clint Bellanger, Lamoot, apricot.blender.org, lattice, p0ss, Bart K., Sindwiller, Justin Jacobs (water animations)
+License: CC-BY-SA 3.0
+Source: https://opengameart.org/content/grassland-tileset
+
+File: art_src_hd/tilesets/ruins/floor_grate.blend
+Author: Clint Bellanger
+License: CC-BY 3.0
+
+File: art_src_hd/tilesets/ruins/low_walls.blend
+Author: Clint Bellanger
+License: CC-BY 3.0
+
+File: art_src_hd/tilesets/ruins/old_ruins_door.blend
+Author: Justin Jacobs
+License: CC-BY-SA 3.0
+
+File: art_src_hd/tilesets/ruins/old_ruins_extra_objects.blend
+Author: Justin Jacobs, Clint Bellanger (dungeon tileset objects), Aare (https://opengameart.org/content/old-book)
+License: CC-BY-SA 3.0
+
+File: art_src_hd/tilesets/ruins/old_ruins_plants.blend
+Author: Justin Jacobs
+License: CC-BY-SA 3.0
+
+File: art_src_hd/tilesets/ruins/old_ruins_stairs.blend
+Author: Justin Jacobs
+License: CC-BY-SA 3.0
+
+File: art_src_hd/tilesets/ruins/old_ruins_tileset_source.blend
+Author: rubberduck
+License: CC-BY-SA 3.0
+Source: https://opengameart.org/content/old-ruins-tileset
+
+File: art_src_hd/tilesets/snow/*
+Author: rubberduck, Clint Bellanger (grassland tileset), Stefan Beller (rotten tower), Justin Jacobs (water animations)
+License: CC-BY-SA 3.0
+Source: https://opengameart.org/content/isometric-snow-tileset-flare
+
+File: art_src_hd/tilesets/teleport/*
+Author: Clint Bellanger
+License: CC-BY 3.0
+Source: https://opengameart.org/content/teleporter-circle
+
+########################
+### Mod files: Fonts
+########################
+
+File: mods/hd-flare-game/fonts/BonaNovaSC*
+Author: Bona Nova Project
+License: SIL Open Font License 1.1
+Source: https://github.com/kosmynkab/Bona-Nova
+
+########################
+### Mod files: Images
+########################
+
+File: mods/hd-flare-game/images/books/book_of_the_dead*
+Author: Justin Jacobs
+License: CC0
+
+File: mods/hd-flare-game/images/books/buchi*
+Author: Justin Jacobs
+License: CC0
+
+File: mods/hd-flare-game/images/icons/icons.png
+Author: Clint Bellanger (models), Justin Nichol (2D painting), Blarumyrran (2D painting), crowline (cloth set), Justin Jacobs (alt potions, pendants, gold coins)
+License: CC-BY-SA 3.0
+Source (CC0): https://opengameart.org/content/flare-weapon-icons-2
+Source (CC-BY 3.0): https://opengameart.org/content/ring-set-precious-metals
+Source (CC0): https://opengameart.org/content/osare-weapon-icons
+Source: https://opengameart.org/content/animal-figurines
+Source (CC-BY 3.0): https://opengameart.org/content/health-and-mana-potion
+Source (CC0): https://opengameart.org/content/armor-icons-by-equipment-slot
+Source (CC-BY 3.0): https://opengameart.org/content/elemental-scrolls
+Source (CC-BY 3.0): https://opengameart.org/content/fantasy-class-icons
+Source (CC0): https://opengameart.org/content/powers-icons
+Source (CC-BY 3.0): https://opengameart.org/content/gems
+Source: https://opengameart.org/content/gemmed-pendants
+
+File: mods/hd-flare-game/images/icons/icons_crafting.png
+Author: Justin Jacobs, Clint Bellanger (empty potion bottle, mushrooms), rubberduck (crystal model)
+License: CC-BY-SA 3.0
+
+File: mods/hd-flare-game/images/icons/icons_empyrean.png
+Author: Justin Jacobs, Mumu (bloody dagger https://opengameart.org/content/flare-item-variation-60x60-only)
+License: CC-BY-SA 3.0
+
+File: mods/hd-flare-game/images/icons/icons_overlay.png
+Author: Justin Jacobs
+License: CC0
+
+File: mods/hd-flare-game/images/parallax/*
+Author: Justin Jacobs
+License: CC0
+
+########################
+### Mod files: Sounds
+########################
+
+File: mods/hd-flare-game/soundfx/widget_activate.ogg
+Author: Justin Jacobs
+License: CC0
+
