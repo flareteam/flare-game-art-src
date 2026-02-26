@@ -164,9 +164,9 @@
  <objectgroup id="24" name="enemy">
   <object id="5" type="enemy" x="576" y="576" width="1536" height="1536">
    <properties>
-    <property name="category" value="il_common"/>
+    <property name="category" value="il_wyvern"/>
     <property name="number" value="3,5"/>
-    <property name="spawn_level" value="level,1,1"/>
+    <property name="spawn_level" value="hero_level,1"/>
    </properties>
   </object>
  </objectgroup>

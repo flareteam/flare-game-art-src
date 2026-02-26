@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.11.2" orientation="isometric" renderorder="right-down" width="28" height="28" tilewidth="192" tileheight="96" infinite="0" backgroundcolor="#000000" nextlayerid="32" nextobjectid="12">
+<map version="1.11" tiledversion="1.11.2" orientation="isometric" renderorder="right-down" width="28" height="28" tilewidth="192" tileheight="96" infinite="0" backgroundcolor="#000000" nextlayerid="32" nextobjectid="18">
  <editorsettings>
-     <export target="../../../../game/mods/procgen_test/maps/iron_labyrinth/f1/key.txt" format="flare"/>
+  <export format="flare"/>
  </editorsettings>
  <properties>
   <property name="hero_pos" value="8,8"/>
@@ -161,26 +161,80 @@
 </data>
  </layer>
  <objectgroup id="22" name="event">
-  <object id="6" name="Treasure Chest (lvl 1)" type="event" x="1248" y="1248" width="96" height="96">
+  <object id="6" name="Treasure Chest (floor 1, lvl 1)" type="event" x="1248" y="1248" width="96" height="96">
    <properties>
     <property name="activate" value="on_trigger"/>
     <property name="hotspot" value="location"/>
     <property name="mapmod" value="object,13,13,267"/>
+    <property name="procgen_door_level" value="0"/>
     <property name="repeat" value="false"/>
-    <property name="requires_door_level" value="0"/>
+    <property name="requires_status" value="emp_il_f1"/>
     <property name="script" value="scripts/maps/iron_labyrinth/f1_key_chest_1.txt"/>
     <property name="soundfx" value="soundfx/wood_open.ogg"/>
     <property name="tooltip" value="Treasure Chest"/>
    </properties>
   </object>
-  <object id="9" name="Treasure Chest (lvl 2)" type="event" x="1248" y="1248" width="96" height="96">
+  <object id="9" name="Treasure Chest (floor 1, lvl 2)" type="event" x="1248" y="1248" width="96" height="96">
    <properties>
     <property name="activate" value="on_trigger"/>
     <property name="hotspot" value="location"/>
     <property name="mapmod" value="object,13,13,267"/>
+    <property name="procgen_door_level" value="1"/>
     <property name="repeat" value="false"/>
-    <property name="requires_door_level" value="1"/>
+    <property name="requires_status" value="emp_il_f1"/>
     <property name="script" value="scripts/maps/iron_labyrinth/f1_key_chest_2.txt"/>
+    <property name="soundfx" value="soundfx/wood_open.ogg"/>
+    <property name="tooltip" value="Treasure Chest"/>
+   </properties>
+  </object>
+  <object id="15" name="Treasure Chest (floor 2, lvl 1)" type="event" x="1248" y="1248" width="96" height="96">
+   <properties>
+    <property name="activate" value="on_trigger"/>
+    <property name="hotspot" value="location"/>
+    <property name="mapmod" value="object,13,13,267"/>
+    <property name="procgen_door_level" value="0"/>
+    <property name="repeat" value="false"/>
+    <property name="requires_status" value="emp_il_f2"/>
+    <property name="script" value="scripts/maps/iron_labyrinth/f2_key_chest_1.txt"/>
+    <property name="soundfx" value="soundfx/wood_open.ogg"/>
+    <property name="tooltip" value="Treasure Chest"/>
+   </properties>
+  </object>
+  <object id="14" name="Treasure Chest (floor 2, lvl 2)" type="event" x="1248" y="1248" width="96" height="96">
+   <properties>
+    <property name="activate" value="on_trigger"/>
+    <property name="hotspot" value="location"/>
+    <property name="mapmod" value="object,13,13,267"/>
+    <property name="procgen_door_level" value="1"/>
+    <property name="repeat" value="false"/>
+    <property name="requires_status" value="emp_il_f2"/>
+    <property name="script" value="scripts/maps/iron_labyrinth/f2_key_chest_2.txt"/>
+    <property name="soundfx" value="soundfx/wood_open.ogg"/>
+    <property name="tooltip" value="Treasure Chest"/>
+   </properties>
+  </object>
+  <object id="17" name="Treasure Chest (floor 3, lvl 1)" type="event" x="1248" y="1248" width="96" height="96">
+   <properties>
+    <property name="activate" value="on_trigger"/>
+    <property name="hotspot" value="location"/>
+    <property name="mapmod" value="object,13,13,267"/>
+    <property name="procgen_door_level" value="0"/>
+    <property name="repeat" value="false"/>
+    <property name="requires_status" value="emp_il_f3"/>
+    <property name="script" value="scripts/maps/iron_labyrinth/f3_key_chest_1.txt"/>
+    <property name="soundfx" value="soundfx/wood_open.ogg"/>
+    <property name="tooltip" value="Treasure Chest"/>
+   </properties>
+  </object>
+  <object id="16" name="Treasure Chest (floor 3, lvl 2)" type="event" x="1248" y="1248" width="96" height="96">
+   <properties>
+    <property name="activate" value="on_trigger"/>
+    <property name="hotspot" value="location"/>
+    <property name="mapmod" value="object,13,13,267"/>
+    <property name="procgen_door_level" value="1"/>
+    <property name="repeat" value="false"/>
+    <property name="requires_status" value="emp_il_f3"/>
+    <property name="script" value="scripts/maps/iron_labyrinth/f3_key_chest_2.txt"/>
     <property name="soundfx" value="soundfx/wood_open.ogg"/>
     <property name="tooltip" value="Treasure Chest"/>
    </properties>
@@ -191,7 +245,7 @@
    <properties>
     <property name="category" value="il_common"/>
     <property name="number" value="3,5"/>
-    <property name="spawn_level" value="level,1,1"/>
+    <property name="spawn_level" value="hero_level,1.1"/>
    </properties>
   </object>
  </objectgroup>

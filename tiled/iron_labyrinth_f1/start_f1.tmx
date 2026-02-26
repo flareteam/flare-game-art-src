@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.11.2" orientation="isometric" renderorder="right-down" width="28" height="28" tilewidth="192" tileheight="96" infinite="0" backgroundcolor="#000000" nextlayerid="24" nextobjectid="15">
+<map version="1.11" tiledversion="1.11.2" orientation="isometric" renderorder="right-down" width="28" height="28" tilewidth="192" tileheight="96" infinite="0" backgroundcolor="#000000" nextlayerid="40" nextobjectid="17">
  <editorsettings>
   <export target="../../../../game/mods/procgen_test/maps/iron_labyrinth/f1/start.txt" format="flare"/>
  </editorsettings>
@@ -168,6 +168,7 @@
     <property name="intermap" value="maps/perdition_harbor_cave.txt,1,4"/>
     <property name="soundfx" value="soundfx/environment/stairs.ogg,0,0"/>
     <property name="tooltip" value="Perdition Harbor Cave"/>
+    <property name="unset_status" value="emp_il_f1"/>
    </properties>
   </object>
   <object id="10" name="Reset Floor" type="event" x="0" y="0" width="96" height="96">
@@ -182,16 +183,16 @@
     <property name="set_status" value="emp_il_f1_tele"/>
    </properties>
   </object>
-  <object id="12" name="Spawn point 2" type="event" x="1632" y="864" width="96" height="96">
+  <object id="12" name="Spawn point: Entrance tele" type="event" x="1632" y="864" width="96" height="96">
    <properties>
-    <property name="hero_pos_id" value="2"/>
+    <property name="intermap_id" value="entrance_tele"/>
    </properties>
   </object>
-  <object id="14" name="Exit Tele" type="event" x="1728" y="672" width="192" height="192">
+  <object id="14" name="Entrance Tele" type="event" x="1728" y="672" width="192" height="192">
    <properties>
     <property name="activate" value="on_trigger"/>
     <property name="hotspot" value="location"/>
-    <property name="intermap" value="maps/perdition_harbor_cave.txt,-1,-1,1"/>
+    <property name="intermap" value="maps/perdition_harbor_cave.txt,-1,-1,obelisk"/>
     <property name="repeat" value="false"/>
     <property name="soundfx" value="soundfx/environment/teleporter.ogg,0,0"/>
     <property name="tooltip" value="Perdition Harbor Cave"/>

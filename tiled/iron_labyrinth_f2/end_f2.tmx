@@ -166,29 +166,31 @@
     <property name="activate" value="on_trigger"/>
     <property name="hotspot" value="location"/>
     <property name="intermap" value="maps/iron_labyrinth_f3.txt"/>
+    <property name="set_status" value="emp_il_f3"/>
     <property name="soundfx" value="soundfx/environment/stairs.ogg,0,0"/>
     <property name="tooltip" value="Iron Labyrinth: Level 3"/>
+    <property name="unset_status" value="emp_il_f2"/>
    </properties>
   </object>
-  <object id="6" name="Spawn point 1" type="event" x="1248" y="1536" width="96" height="96">
+  <object id="6" name="Spawn point: Stairs down" type="event" x="1248" y="1536" width="96" height="96">
    <properties>
-    <property name="hero_pos_id" value="1"/>
+    <property name="intermap_id" value="stairs_down"/>
    </properties>
   </object>
  </objectgroup>
  <objectgroup id="23" name="enemy">
-  <object id="7" type="enemy" x="672" y="672" width="960" height="576">
+  <object id="7" type="enemy" x="672" y="672" width="960" height="384">
    <properties>
     <property name="category" value="il_common"/>
     <property name="number" value="1,2"/>
-    <property name="spawn_level" value="level,1,1"/>
+    <property name="spawn_level" value="hero_level,1.1"/>
    </properties>
   </object>
   <object id="8" type="enemy" x="672" y="1440" width="288" height="480">
    <properties>
     <property name="category" value="il_common"/>
     <property name="number" value="1,2"/>
-    <property name="spawn_level" value="level,1,1"/>
+    <property name="spawn_level" value="hero_level,1.1"/>
    </properties>
   </object>
  </objectgroup>

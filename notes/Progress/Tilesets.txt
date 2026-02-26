@@ -18,4 +18,4 @@ Created Friday 14 March 2025
 
 ===== New sets =====
 [ ] town (add to grassland?)
-[ ] old_ruins
+[*] old_ruins

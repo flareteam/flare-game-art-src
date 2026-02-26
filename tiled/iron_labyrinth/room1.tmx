@@ -191,7 +191,7 @@
    <properties>
     <property name="category" value="il_common"/>
     <property name="number" value="3,5"/>
-    <property name="spawn_level" value="level,1,1"/>
+    <property name="spawn_level" value="hero_level,1"/>
    </properties>
   </object>
  </objectgroup>
