@@ -13,5 +13,5 @@ These files support modern versions of Blender and use the EEVEE render backend.
 
 ## Credits
 
-Most of the credits are the same as flare-game. New textures (licensed CC0) sourced from cc0-textures.com have been added.
+Most of the credits are the same as flare-game. New textures (licensed CC0) sourced from cc0-textures.com have been added. See CREDITS.txt for a break-down by file.
 
