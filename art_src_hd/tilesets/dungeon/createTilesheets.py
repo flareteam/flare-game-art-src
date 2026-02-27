@@ -364,7 +364,7 @@ for i in range(0, len(tile_filenames)):
 
 
 # tomb and bed
-target_x = tile_w * 4
+target_x = tile_w * 2
 target_y = tile_h * 11
 tile_id = (tileset_cols * 12) + 2
 
