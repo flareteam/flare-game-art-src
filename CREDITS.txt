@@ -257,6 +257,10 @@ Author: Clint Bellanger
 License: CC-BY 3.0
 Source: https://opengameart.org/content/teleport-rune
 
+File: art_src_hd/spells/rupture.blend
+Author: Justin Jacobs
+License: CC-BY 3.0
+
 File: art_src_hd/spells/shield.blend
 Author: Clint Bellanger
 License: CC-BY 3.0
