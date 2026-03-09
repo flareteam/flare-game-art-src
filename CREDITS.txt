@@ -7,6 +7,11 @@ Author: Justin Jacobs (composition), Clint Bellanger (models)
 License: CC-BY-SA 3.0
 Source: (see tilesets/dungeon)
 
+File: art_src_hd/backgrounds/empyrean_city.blend
+Author: Justin Jacobs (composition, models), Clint Bellanger (models)
+License: CC-BY-SA 3.0
+Source: (see tilesets/grassland, characters/wyvern)
+
 ########################
 ### Characters
 ########################
