@@ -158,7 +158,7 @@ License: CC-BY-SA 3.0
 ########################
 
 File: art_src_hd/loot/loot.blend
-Author: Clint Bellanger
+Author: Clint Bellanger, Justin Jacobs (pouch model)
 License: CC-BY 3.0
 Source: https://opengameart.org/content/flying-loot-animations
 
