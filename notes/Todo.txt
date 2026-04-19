@@ -16,11 +16,11 @@ Created Saturday 31 January 2026
 ===== Art =====
 [*] Better packing of animated tiles (tighter bbox for 1st frame)
 [*] More objects for ruins tileset
-[ ] Cutscene renders to replace "oil painting filter" images
+[*] Cutscene renders to replace "oil painting filter" images
 
 ===== Gameplay =====
 [*] Create scaled goblins, wyverns, antlions
 [*] More powers on existing undead
 [*] Undead variants with different powers (poison, etc)
-[ ] More powers on armored antlion boss
+[*] More powers on armored antlion boss
 [*] Add keys to Udana's trade stock
