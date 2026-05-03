@@ -59,7 +59,7 @@ MISSING-INFO: Clint Bellanger's human model?
 
 File: art_src_hd/characters/hero/*
 File: art_src_hd/characters/heroine/*
-Author: Clint Bellanger
+Author: Clint Bellanger, Justin Jacobs (kite shield)
 License: CC-BY 3.0
 Source: https://opengameart.org/content/isometric-hero-and-heroine
 Source (CC-BY-SA 3.0): https://opengameart.org/content/iron-buckler
